@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove outline on the forms and links
+===============================================================*/
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mountains.jpg);
+  background-size: cover;
+}
+
+.cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/cloud.png);
+  background-size: cover;
+  animation: animate 60s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -5440px;
+  }
+}
+
+.container-button {
+  position: relative;
+  max-width: 800px;
+}
+
+button {
+  min-width: 115px;
+  padding: 10px 25px;
+  margin: 10px;
+  font-size: 18px;
+  color: black;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 25px;
+  box-shadow: 0 0 3px #808080;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 0 #808080;
+}
+
+button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 #808080;
+}
+
+.popup-sign-up {
+  display: none;
+}
+
+.popup-sign-in {
+  display: none;
+}
+
+.popup__darkened-background {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(3px);
+}
+
+.popup__inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  min-width: 300px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgb(0, 0, 0, .50);
+  background: rgba(255, 255, 255, .3);
+} 
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+label {
+  margin: 0 0 6px;
+}
+
+input {
+  margin-bottom: 16px;
+  padding: 4px 30px 4px 12px;
+  width: 100%;
+  border: 1px solid #e1e4e8;
+}
+
+input:focus {
+  box-shadow:0 0 5px #808080;
+}
+
+.popup-registration-ok {
+  display: none;
+}
+
+.inner{
+  padding: 35px 40px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popup-title {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.popup-signed {
+  display: none;
+}
+
+.popup-user-date {
+  display: none;
+}
+
+.button-sign-out {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}

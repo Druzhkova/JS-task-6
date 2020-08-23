@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer type="text/javascript" src="./js/script.js"></script>  
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Popup with blurred background</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="cloud"></div>
+    <div class="container-button">
+      <button class='button-sign-up'>Sign up</button>
+      <button class='button-sign-in'>Sign in</button>
+    </div>
+    <div class="popup-sign-up">
+      <div class="popup__darkened-background">
+        <div class="popup__inner">
+          <form class="form-sign-up" name="user-form-sign-up" action="#" method="POST" enctype="multipart/form-data">
+            <h2>Create your account</h2>
+            <label for="form-sign-up-login">Login</label> 
+            <input name="login" id="form-sign-up-login" type='text'>
+            <label for="form-sign-up-password">Password</label>
+            <input name="password" id="form-sign-up-password" type='password'>  
+            <label for="form-sign-up-username">Username</label> 
+            <input name="username" id="form-sign-up-username" type='text'>
+            <label for="form-sign-up-age">Age</label> 
+            <input name="age" id="form-sign-up-age" type='number'>
+          </form>
+          <button class='create-account'>Create account</button>
+          <button class="close-sign-up">Close</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup-registration-ok">
+      <div class="popup__darkened-background">
+        <div class="popup__inner inner">
+          <p class="popup-title">Registration is successful</p>
+          <button class="button-ok-registration">Ok</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup-signed">
+      <div class="popup__darkened-background">
+        <div class="popup__inner inner">
+          <p class="popup-title">Congratulations, you are signed in!</p>
+          <button class="button-ok-signed">Ok</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup-user-date">
+      <div class="popup__darkened-background">
+        <div class="popup__inner">
+          <p class="popup-title" id="user-name"></p>
+          <p class="popup-title" id='user-age'></p>
+          <span class="button-sign-out">&times;</span>
+        </div>
+      </div>
+    </div>
+    <div class="popup-sign-in">
+      <div class="popup__darkened-background">
+        <div class="popup__inner">
+          <form class="form-sign-in" name="user-form-sign-in" action="#" method="POST" enctype="multipart/form-data">
+            <h2>Sign in to account</h2>
+            <label for="form-sign-in-login">Login</label> 
+            <input id="form-sign-in-login" name="login" type='text'>
+            <label for="form-sign-in-password">Password</label>
+            <input id="form-sign-in-password" name="password" type='password'>  
+          </form>
+          <button class='button-sign-in-confirm'>Confirm</button>
+          <button class="close-sign-in">Close</button>
+        </div>
+      <div>
+    </div>
+  </div>
+</body>
+</html>
