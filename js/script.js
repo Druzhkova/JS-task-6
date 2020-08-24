@@ -23,8 +23,8 @@ buttonSignUp.addEventListener('click', function(){
   containerButton.style.display = 'none';
 });
 
-buttonCloseSignUp.addEventListener('click', CloseSignUp)
-function CloseSignUp() {
+buttonCloseSignUp.addEventListener('click', closeSignUp)
+function closeSignUp() {
   popupSignUp.style.display = 'none';
   containerButton.style.display = 'block';
 }
@@ -34,8 +34,8 @@ buttonSignIn.addEventListener('click', function(){
   containerButton.style.display = 'none';
 });
 
-buttonCloseSignIn.addEventListener('click', CloseSignIn);
-function CloseSignIn() {
+buttonCloseSignIn.addEventListener('click', closeSignIn);
+function closeSignIn() {
   popupSignIn.style.display = 'none';
   containerButton.style.display = 'block';
 }
@@ -48,7 +48,6 @@ function getNoEmptyFields(object) {
 }
 
 let userList = [];
-let Hello = document.querySelector('.hello');
 let userData = {};
 buttonCreateAccount.addEventListener('click', function() {
   userData.login = formSignUp.elements.login.value;
